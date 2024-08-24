@@ -460,7 +460,7 @@ function showRecords() {
   let str='-Records-<br>';
   for ( let i=0; i<records.length; i++ ) {
       const userScore=records[i];
-      if (userScore.name==null) userScore.name = 'not authorized';
+      if (userScore.name==null || userName.name =='') userScore.name = 'No name';
       str+=escapeHTML(userScore.name)+"........"
           +escapeHTML(userScore.score)+"<br />";
   }
@@ -545,7 +545,7 @@ function lockGetReady(callresult) {
           records=[];
       }
 
-      if (userName==null || userName=='') userName='No name';
+      
       if (scores>records[records.length-1].score){
         records.push( { name:userName, score:scores } );
         records.sort((a, b) => b.score - a.score);
