@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumper</title>
+    <link rel="icon" href="images/classic_doodle.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2  id="startGame">Start game</h2><br>
+
+        <h2 id="playGame"><img src="images/play-pause.png" alt="play/pause" class="play1"></h2>
+
+
+        <h2 id="recordsButton">Records</h2>
+        <!-- <h2  id="stopGame">Stop game</h2> -->
+    </div>
+    
+    <div class="canvas-container">
+        <h3 id="score"></h3>
+    <canvas width="375" height="667" id="game" ></canvas>
+
+    <h3 id="records">
+
+    </h3>
+
+    </div>
+
+    <div class="select-doodler">
+        <form name="form">
+            <h3>What is your name?</h3><br>
+            <input type="text" class= 'text' id="userName"><br>
+
+            <h3>select your doodler</h3><br>
+            <input type="radio" id="doodlerType" name="doodlerType" value="1"><img src="images/classic_doodle.png">
+            <input type="radio" id="doodlerType" name="doodlerType" value="2"><img src="images/super_doodle.png">
+            <input type="radio" id="doodlerType" name="doodlerType" value="3"><img src="images/ninja_doodle.png"><br>
+
+            <input type="submit" class="submit" value="submit" id="submit">
+        </form>
+    </div>
+    <script src='https://fe.it-academy.by/JQ/jquery.js'></script>
+    <!-- <script src="store.js" ></script> -->
+    <script src="script.js"></script>
+</body>
+</html>

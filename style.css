@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  justify-content: center;
+  background: url(images/background.jpg);
+}
+
+canvas {
+  border: 2px solid wheat;
+  background: url(images/background_game.jpg);
+  background-repeat: no-repeat;
+}
+
+h2{
+  color: SpringGreen;
+  -webkit-text-stroke: 0.5px MediumOrchid;
+  font-size: 75px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+h2:hover{
+  color: MediumOrchid;
+  -webkit-text-stroke: 0.5px SpringGreen;
+}
+
+.canvas-container {
+  text-align: center;
+}
+
+.select-doodler {
+  text-align: center;
+}
+
+.select-doodler .arrows{
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border-radius: 10px;
+  padding: 12px;
+  background-color: SpringGreen;
+  font-weight: 600;
+  font-size: 18px;
+  /* line-height: 156%; */
+  color: MediumOrchid;
+  text-decoration: none;
+  transition: 0.8s;
+  border: 1px solid wheat;
+}
+
+button:hover{
+  color:  SpringGreen;
+  background-color: MediumOrchid;
+  /* border: 1px solid wheat; */
+}
+
+h3 {
+  color: SpringGreen;
+  -webkit-text-stroke: 0.5px MediumOrchid;
+  font-size: 64px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+ input.text{
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: MediumOrchid;
+  background-color: SpringGreen;
+  background-clip: padding-box;
+  border: 2px solid MediumOrchid;
+  border-radius: 40%;
+  transition: 0.8s;
+}
+
+input.submit{
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: MediumOrchid;
+  background-color: SpringGreen;
+  background-clip: padding-box;
+  border: 2px solid MediumOrchid;
+  border-radius: 40%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+input.submit:hover{
+  color: SpringGreen;
+  background-color: MediumOrchid;
+  border: 2px solid SpringGreen;
+}
+
+form img {
+  width: 100px;
+  height: 100px;
+}
+
+#playGame{
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+#playGame img {
+  width: 100px;
+  height: 100px;
+  left: 12%;
+}
+
+
+
